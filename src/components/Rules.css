@@ -1,0 +1,53 @@
+.rules-button {
+  background-color: none;
+  border: 2px solid #5d6e89;
+  width: 100px;
+  height: 35px;
+  margin-bottom: 30px;
+  float: right;
+  color: white;
+  letter-spacing: 2.5px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+}
+
+.rules-button:hover {
+  color: white;
+}
+
+.modal-header {
+  border: none;
+}
+
+span {
+  display: none;
+}
+
+.modal-content {
+  width: auto;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.rules-text {
+  color: #384365;
+  font-size: 2rem;
+  margin: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.rules-img {
+  padding: 0 20px 10px;
+}
+
+@media (max-width: 825px) {
+  .rules {
+    text-align: center;
+  }
+
+  .rules-button {
+    float: none;
+  }
+  
+}

@@ -1,0 +1,51 @@
+.scoreboard {
+  border: 3px solid #5d6e89;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 12px;
+}
+
+.white-box {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px 25px;
+}
+
+h4 {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    color: #5c69bf;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    color: #575467;
+    font-weight: 700;
+}
+
+@media (max-width: 825px) {
+  .scoreboard {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

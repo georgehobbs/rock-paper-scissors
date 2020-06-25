@@ -1,0 +1,101 @@
+.game {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pick {
+  background: url("/images/bg-triangle.svg") no-repeat center;
+  background-position: 50% 65%;
+  width: 40%;
+  margin: auto;
+}
+
+.circle {
+  height: 170px;
+  width: 170px;
+  background-color: white;
+  margin: 0 30px 25px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.circle img {
+  position: relative;
+  top: 35px;
+  left: 35px;
+  height: 50%;
+}
+
+.paper {
+  border: 20px solid #4f6bf6;
+}
+
+.scissors {
+  border: 20px solid #eaa416;
+}
+
+.rock {
+  border: 20px solid #dc3353;
+}
+
+.result {
+  width: 60%;
+  margin: auto;
+}
+
+.result-circle h3 {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.result-circle .circle {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.message {
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.message h2 {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.play-again {
+  background-color: white;
+  color: #dc3353;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.play-again:hover {
+  background-color: white;
+  color: #dc3353;
+}
+
+@media (max-width: 825px) {
+  .pick {
+    width: 100%;
+    margin: auto;
+  }
+
+  .result {
+    width: 100%;
+    margin: auto;
+  }
+
+  .play-again {
+    width: 50%;
+  }
+
+}

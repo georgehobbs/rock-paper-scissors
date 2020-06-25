@@ -1,0 +1,7 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-image: linear-gradient(#1e3352, #171e40);
+    color: white;
+    max-width: 1366px;
+    margin: auto;
+}

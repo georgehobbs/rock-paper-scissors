@@ -7,18 +7,20 @@ import Rules from "./Rules";
 function App() {
   const [score, setScore] = useState(0);
   const [selection, setSelection] = useState("");
+  const [compWeapon, setCompWeapon] = useState("");
 
   function onPick(weaponChosen) {
     setSelection(weaponChosen);
   }
 
-  // function updateScore(result) {
-  //   setScore(score + result);
-  // }
+  function updateScore(result, compPick) {
+    setScore(score + result);
+    setCompWeapon(compPick);
+  }
 
   function newGame(result) {
     setSelection("");
-    setScore(score + result);
+    setCompWeapon("");
   }
 
   return (
@@ -29,9 +31,9 @@ function App() {
           <Pick onPick={onPick} />
         ) : (
           <Result
-            compPick={Math.floor(Math.random() * 3)}
+            compPick={compWeapon}
             userPick={selection}
-            // updateScore={updateScore}
+            updateScore={updateScore}
             newGame={newGame}
           />
         )}

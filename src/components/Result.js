@@ -8,7 +8,10 @@ import "./Game.css";
 function Result(props) {
   const [result, setResult] = useState(null);
   const [showBoth, setShowBoth] = useState(false);
-  const compPick = props.compPick;
+  let compPick = props.compPick;
+  if (compPick === "") {
+    compPick = Math.floor(Math.random() * 3);
+  }
 
   useEffect(() => {
     setTimeout(function () {
@@ -17,9 +20,9 @@ function Result(props) {
     }, 1000);
   }, []); // empty array as second argument prevents it running on every re-render.
 
-//   useEffect(() => {
-//     props.updateScore(result);
-//   }, [result]); // add result as a callback dependency means this runs whenever the result state changes
+  useEffect(() => {
+    props.updateScore(result, compPick);
+  }, [result]); // add result as a callback dependency means this runs whenever the result state changes
 
   const userPick = props.userPick;
   let userIcon = null;
